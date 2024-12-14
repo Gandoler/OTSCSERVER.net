@@ -2,22 +2,21 @@
 
 namespace OTSCSERVER.Tools.AppSettingsParse.Templaetes
 {
-    internal class RootConfig : ITemplates
+    internal class RootConfig(ServerSettings serverSettings, TgBotSettings tgBotSettings) : ITemplates
     {
         [JsonProperty("serverSetings")]
-        public required ServerSettings ServerSettings { get; set; } = new ServerSettings()!;
-
-
-
+        public ServerSettings ServerSettings { get; set; } = serverSettings ?? new ServerSettings();
+        [JsonProperty("botSettings")]
+        public TgBotSettings TgBotSettings { get; set; } = tgBotSettings ?? new TgBotSettings();
 
         public string GetConnectionString()
         {
-            return ServerSettings?.ToString() ?? string.Empty;
+            return ServerSettings.ToString() + TgBotSettings.ToString();
         }
 
         public override string ToString()
         {
-            return ServerSettings?.ToString() ?? string.Empty;
+            return ServerSettings.ToString() ;
         }
 
     }

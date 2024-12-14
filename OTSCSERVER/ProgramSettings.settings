@@ -1,0 +1,9 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="OTSCSERVER" GeneratedClassName="Settings1">
+  <Profiles />
+  <Settings>
+    <Setting Name="AppsettingsPath" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\Users\glkru\source\repos\OTSCSERVER\OTSCSERVER\Tools\AppSettingsParse\RealSAppSettimgs.json</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
