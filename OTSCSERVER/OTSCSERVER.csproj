@@ -30,4 +30,8 @@
     </None>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Tools\DBTools\TelegramTools\" />
+  </ItemGroup>
+
 </Project>

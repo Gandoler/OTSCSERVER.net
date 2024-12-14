@@ -39,5 +39,11 @@ namespace OTSCSERVER.Tools.AppSettingsParse.ConectionStringManager
         }
 
 
+        public static string GetTelegramToken()
+        {
+            return rootConfig.TgBotSettings.ToString();
+        }
+
+
     }
 }
