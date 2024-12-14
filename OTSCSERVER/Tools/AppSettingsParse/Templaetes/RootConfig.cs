@@ -1,10 +1,10 @@
 ﻿using Newtonsoft.Json;
 
-namespace OTSCSERVER.Tools.Templaetes
+namespace OTSCSERVER.Tools.AppSettingsParse.Templaetes
 {
     internal class RootConfig : ITemplates
     {
-        [JsonProperty("serverSetings")] 
+        [JsonProperty("serverSetings")]
         public required ServerSettings ServerSettings { get; set; } = new ServerSettings()!;
 
 

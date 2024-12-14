@@ -1,6 +1,6 @@
 ﻿using Serilog;
 
-namespace OTSCSERVER.Tools.Templaetes
+namespace OTSCSERVER.Tools.AppSettingsParse.Templaetes
 {
     public class ServerSettings : ITemplates
     {
